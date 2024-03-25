@@ -1,28 +1,30 @@
 import React from 'react';
-import { BpkCode } from '@skyscanner/backpack-web/bpk-component-code';
-import BpkButton from '@skyscanner/backpack-web/bpk-component-button';
+import { useState } from 'react';
+import { format } from 'date-fns';
+import { DayPicker } from 'react-day-picker';
+import {BpkButton} from '@skyscanner/backpack-web/bpk-component-button';
 import BpkText from '@skyscanner/backpack-web/bpk-component-text';
-
+import BpkCalendarContainer from '@skyscanner/backpack-web/bpk-component-calendar';
 import { cssModules } from '@skyscanner/backpack-web/bpk-react-utils';
-
+import './App.css';
 import STYLES from './App.scss';
+export default function Example() {
+  const [selected, setSelected] = useState(Date); 
+  let footer = <p>Please pick a day.</p>;
+  if (selected) {
+    footer = <p>You picked {format(selected, 'PP')}.  <button type="button" style={{
+      color:"blue", background: "white", display: "flex", border: "2px solid blue", justifycontent:"flex-end" 
+    }} onClick={() => alert('It works!')}>Continue</button> </p>; }
+  return (
+    <div style={{
+      textAlign: "center" }}><h1><b> Flight  Schedule </b></h1>
+    <DayPicker style={{
+      display:"flex", fontweight:"bold", color:"#6f48eb"    }}
+      mode="single"
+      selected={selected}
+      onSelect={setSelected}
+      footer={footer} />
+    </div>
+)}
 
-const getClassName = cssModules(STYLES);
 
-const App = () => (
-  <div className={getClassName('App')}>
-    <header className={getClassName('App__header')}>
-      <div className={getClassName('App__header-inner')}>
-        <BpkText tagName="h1" textStyle="xxl" className={getClassName('App__heading')}>Welcome to React + Backpack</BpkText>
-      </div>
-    </header>
-    <main className={getClassName('App__main')}>
-      <BpkText tagName="p" className={getClassName('App__text')}>
-        To get started, edit <BpkCode>src/App.jsx</BpkCode> and save to reload.
-      </BpkText>
-      <BpkButton onClick={() => alert('It works!')}>Click me</BpkButton>
-    </main>
-  </div>
-);
-
-export default App;

@@ -5,11 +5,11 @@
   margin: 0 auto;
 }
 
-.App {
+.function {
   text-align: center;
 
   &__header {
-    padding: $bpk-spacing-lg * 2;
+    //  padding: $bpk-spacing-lg * 2;
     background-color: $bpk-color-sky-blue;
     background-image: $bpk-primary-gradient;
     color: $bpk-color-white;
@@ -17,7 +17,7 @@
     @include bpk-box-shadow-sm;
 
     @include bpk-breakpoint-mobile {
-      padding: $bpk-spacing-xl;
+      //  padding: $bpk-spacing-xl;
     }
   }
 
@@ -26,20 +26,25 @@
   }
 
   &__main {
-    padding: $bpk-spacing-xxl;
+    //  padding: $bpk-spacing-xxl;
 
     @include container;
 
     @include bpk-breakpoint-mobile {
-      padding: $bpk-spacing-base;
+      // padding: $bpk-spacing-base;
     }
   }
 
-  &__heading {
-    margin-bottom: $bpk-spacing-sm;
-  }
+//   &__heading {
+//       margin-bottom: $bpk-spacing-sm;
+//   }
 
-  &__text {
-    margin-bottom: $bpk-spacing-sm;
-  }
+//   &__text {
+//       margin-bottom: $bpk-spacing-sm;
+//   }
+
+&_footer_p {
+  width: '100%';
+  height: '20%';
 }
+ }

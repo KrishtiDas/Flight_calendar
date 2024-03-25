@@ -1,0 +1,72 @@
+ *{
+    background-color: #e8e883;
+}
+.function {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: #c0b2b2;
+    border-color: transparent !important;
+  
+}
+ 
+table {
+    padding-top: 50px;
+    width: 1200px;
+    height: 200px;
+    padding-left: 200px;
+    padding-right: 100px;
+    border-collapse: collapse; 
+    border-spacing: 0;
+    outline: 0px solid transparent;
+  
+}
+ 
+th {
+    width: 10px;
+    border-bottom: 2px solid rgb(251, 251, 254);
+}
+td {
+    text-align: center;
+    padding-bottom: 30px;
+    border: 0 !important;
+  
+}
+tr{
+    text-align: center;
+    padding-bottom: 30px;
+    border: 0 !important;
+  
+}
+  /* // // import React from 'react';
+  // // import { BpkCode } from '@skyscanner/backpack-web/bpk-component-code';
+  // // import BpkButton from '@skyscanner/backpack-web/bpk-component-button';
+  // // import BpkText from '@skyscanner/backpack-web/bpk-component-text';
+  // // import { cssModules } from '@skyscanner/backpack-web/bpk-react-utils';
+  
+  // // import STYLES from './App.scss';
+  
+  // // const getClassName = cssModules(STYLES);
+  
+  // // const App = () => (
+  // //   <div className={getClassName('App')}>
+  // //     <header className={getClassName('App__header')}>
+  // //       <div className={getClassName('App__header-inner')}>
+  // //         <BpkText tagName="h1" textStyle="xxl" className={getClassName('App__heading')}>Flight Schedule</BpkText>
+  // //       </div>
+  // //     </header>
+  // //     <main className={getClassName('App__main')}>
+  // //       <BpkText tagName="p" className={getClassName('App__text')}>
+  // //         To get started, edit <BpkCode>src/App.jsx</BpkCode> and save to reload.
+  // //       </BpkText>
+  // //       <BpkButton title="right-button" onClick={() => alert('It works!')}>Continue</BpkButton>
+        
+  // //     </main>
+  // //   </div>
+  // // );
+  
+  // // export default App;
+   */

@@ -3,7 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@skyscanner/backpack-react-scripts": "11.0.1"
+    "@babel/core": "^7.23.9",
+    "@skyscanner/backpack-react-scripts": "^11.0.1",
+    "@skyscanner/bpk-foundations-web": "^17.8.1",
+    "babel-preset-backpack": "^0.8.4",
+    "bpk-component-button": "^1.5.22",
+    "bpk-component-code": "^0.0.53",
+    "date-fns": "^3.3.1",
+    "formsy-react": "^2.3.0",
+    "prop-types": "^15.8.1",
+    "react-day-picker": "^8.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,10 +35,12 @@
     ]
   },
   "devDependencies": {
-    "@skyscanner/backpack-web": "^15.1.0",
-    "bpk-mixins": "^36.2.0",
-    "bpk-stylesheets": "^7.2.16",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@skyscanner/backpack-web": "^32.0.0",
+    "bpk-mixins": "^42.0.1",
+    "bpk-stylesheets": "^9.0.17",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-native-bpk-component-calendar": "^6.0.0"
   }
 }
